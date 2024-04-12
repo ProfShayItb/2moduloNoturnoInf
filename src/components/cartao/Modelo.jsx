@@ -1,3 +1,5 @@
+import './modelo.css'
+
 export default props =>{
    const estilo = {
         backgroundColor: props.cor || '#f00',
