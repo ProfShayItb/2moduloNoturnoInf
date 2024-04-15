@@ -3,15 +3,13 @@ import Propriedade from "./components/Propriedade"
 import Fragmento from "./components/Fragmento"
 import NumeroAleatorio from './components/NumeroAleatorio'
 import Modelo from "./components/cartao/Modelo"
-
-
-
+import './App.css'
 
 function App() {
 
 
   return (
-    <>
+    <main className="cards">
       <Modelo titulo="Número aleatório" cor="blue">
         <NumeroAleatorio min={1} max={10} />
       </Modelo>
@@ -20,10 +18,11 @@ function App() {
       </Modelo>
 
 
-      <Propriedade titulo="04/04/2024" subtitulo="Hoje é quinta-feira" />
-
-      <Propriedade titulo="05/04" subtitulo="Sexta-feira" />
-    </>
+      <Modelo titulo="Propriedade" cor="pink">
+        <Propriedade titulo="04/04/2024" subtitulo="Hoje é quinta-feira" />
+        <Propriedade titulo="05/04" subtitulo="Sexta-feira" />
+      </Modelo>
+    </main>
   )
 }
 
