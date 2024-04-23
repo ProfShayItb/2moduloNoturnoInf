@@ -4,6 +4,7 @@ import Fragmento from "./components/Fragmento"
 import NumeroAleatorio from './components/NumeroAleatorio'
 import Modelo from "./components/cartao/Modelo"
 import SobreMim from "./components/SobreMim"
+import ListaAluno from "./components/repeticao/ListaAluno"
 import './App.css'
 
 function App() {
@@ -11,6 +12,10 @@ function App() {
 
   return (
     <main className="cards">
+
+      <Modelo titulo="Lista usando Map" cor="purple">
+        <ListaAluno/>
+      </Modelo>
      
      <Modelo titulo="Sobre Mim" cor="orange">
        <SobreMim/>

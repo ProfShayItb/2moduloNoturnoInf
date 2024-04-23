@@ -1,10 +1,21 @@
+import alunos from '../../data/alunos'
+
 export default (props)=>{
+
+    const lista = alunos.map((alunos)=> {
+        return(
+            <li key={alunos.id}>
+                {alunos.id} - {alunos.nome} - {alunos.nota}
+            </li>
+        )
+    })
+
+
+
     return(
         <section>
             <ul>
-                <li>Ana - 9</li>
-                <li>Paulo - 9</li>
-                <li>João - 10</li>
+                {lista}
             </ul>
         </section>
     )
